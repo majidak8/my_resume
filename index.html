@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>resume</title>
     <!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
-    <link type="text/css" rel="stylesheet" href="scss/main.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/hover-min.css">
     <link type="text/css" rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="images/person-bounding-box.svg" rel="icon">
     <link href="images/person-bounding-box.svg" rel="apple-touch-icon">
 </head>
 
 <body>
     <!-- start navbar -->
-    <div class="wrapper position-relative my-0 mx-auto w-100">
-        <div class="sidebar float-end">
+    <div class="wrapper d-flex position-relative my-0 mx-auto w-100">
+        <div class="sidebar">
             <div class="sidebar-header">
                 <div class="my_pic position-relative border-2 text-center m-3">
-                    <img src="images/photo.jpg" alt="Image">
+                    <img class="w-100 h-100" src="images/photo.jpg" alt="Image">
                     <div class="pic_content w-100 px-0 py-3 position-absolute start-50">
                         <ul class="social p-0 m-0">
                             <li class="d-inline-block my-0 mx-1">
@@ -50,16 +51,22 @@
                 </div>
             </div>
             <div class="sidebar-content">
-                <nav class="navbar navbar-expand-md navbar-dark p-0">
-                    <a href="#" class="navbar-brand">resume page</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav class="navbar navbar-expand-md p-0">
+                    <a href="#" class="navbar-brand">رزومه من</a>
+                      <button class="navbar-toggler collapsed border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger_toggle position-relative d-inline-block">
+                            <div class="hamburger position-absolute left-50 top-50 w-50 h-50">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                       </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="nav navbar-nav" id="pills-tab" role="tablist">
                             <button class="btn nav-item w-100 border-1 active show" data-bs-toggle="pill" data-bs-target="#Home" role="tab" aria-selected="true">
                                 <span class="nav-link d-flex justify-content-between">
-                                    Home
+                                    خانه
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-house-door-fill" viewBox="0 0 16 16">
                                         <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
                                     </svg>   
@@ -67,7 +74,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-1" data-bs-toggle="pill" data-bs-target="#About" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    About
+                                    درباره من
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
                                         <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
                                     </svg>
@@ -75,7 +82,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-1" data-bs-toggle="pill" data-bs-target="#Experiences" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    experiences
+                                    سوابق کاری
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                                     </svg>
@@ -83,7 +90,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-1" data-bs-toggle="pill" data-bs-target="#Service" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    Service
+                                    خدمات
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list-task" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
                                         <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
@@ -93,7 +100,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-1" data-bs-toggle="pill" data-bs-target="#Portfolio" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    Portfolio
+                                    نمونه کارها
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark-zip-fill" viewBox="0 0 16 16">
                                         <path d="M5.5 9.438V8.5h1v.938a1 1 0 0 0 .03.243l.4 1.598-.93.62-.93-.62.4-1.598a1 1 0 0 0 .03-.243z"/>
                                         <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-4-.5V2h-1V1H6v1h1v1H6v1h1v1H6v1h1v1H5.5V6h-1V5h1V4h-1V3h1zm0 4.5h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.109 0l-.93-.62a1 1 0 0 1-.415-1.074l.4-1.599V8.5a1 1 0 0 1 1-1z"/>
@@ -102,7 +109,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-1" data-bs-toggle="pill" data-bs-target="#Certificate" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    Certificate
+                                    گواهینامه ها
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
                                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
                                     </svg>
@@ -110,7 +117,7 @@
                             </button>
                             <button class="btn nav-item w-100 border-0" data-bs-toggle="pill" data-bs-target="#Contact" role="tab" aria-selected="false">
                                 <span class="nav-link d-flex justify-content-between">
-                                    Contact
+                                    راه های ارتباطی
                                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                                     </svg>
@@ -124,230 +131,195 @@
         </div>
         <!-- end navbar -->
         <!-- start content -->
-        <main class="tab-content content position-relative start-0" id="pills-tabContent">
-            <section class="tab-pane fade header show active position-relative" id="Home" role="tabpanel">
+        <main class="tab-content content px-0" id="pills-tabContent">
+            <section class="tab-pane fade header show active position-relative border-0" id="Home" role="tabpanel">
                 <img class="pr_gif w-100 opacity-25" src="images/gif-03.gif" alt="">
                 <article class="content-inner text-center position-absolute start-0 end-0 d-flex flex-column justify-content-evenly">
-                    <p>I'm</p>
-                    <h1>Majid Ebrahimi</h1>
+                    <!-- <p>I'm</p> -->
+                    <h1>مجید ابراهیمی</h1>
                     <h6>
                         <a href="" class="typewrite" data-period="2000" data-type='[ "Web Developer", "Front End Developer", "Graphic Designer", " Motion Graphic Designer" ]'>
                             <span class="wrap"></span>
                         </a>
                     </h6>
                 </article>
-                <article class="large_btn w-100 d-flex position-relative">
-                    <button class="btn w-50 d-flex align-items-center justify-content-center rounded-0 border-0">Resume
+                <article class="large_btn btn-group d-flex position-relative w-100 bottom-0">
+                    <button class="btn d-flex align-items-center justify-content-center rounded-0 border-0">دانلود رزومه
                         <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-download" viewBox="0 0 16 16">
                                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                 <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                         </svg> 
                     </button>
-                    <button class="btn w-50 d-flex align-items-center justify-content-center rounded-0 border-0">Hire Me
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-sliders" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
-                        </svg> 
-                    </button>
                 </article>
             </section>
-            <section class="tab-pane about fade" id="About" role="tabpanel">
-                <div class="head_title">
-                    <h2>Aboute me</h2>
+            <section class="tab-pane about fade vh-100" id="About" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
+                    <h2>درباره من</h2>
                 </div>
-                <div class="disc px-4 py-0 lh-base">
-                    <p><strong> Web developer</strong> with experience in designing and developing user interfaces and debugging. Ability to optimize web functions that improve data retrieval and workflow efficiency.</p>
-                    <p><strong> Graphic designer</strong> with experience in logo design, digital banners, business cards, office sets and etc </p>
-                    <p><strong> Motion graphic designer</strong> with experience in product teaser design, logo movement, character animation, design and execution of mobile game introduction page</p>
-                    <button class="btn btn-outline-light d-block mx-auto p-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" class="bi bi-sliders" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
-                        </svg> Hire Me
-                    </button>
+                <div class="disc px-4 py-0 lh-base text-end">
+                    <ul>
+                        <li><strong>متولد:</strong><span>1371</span></li>
+                        <li><strong>تحصیلات:</strong><span>مقطع کارشناسی در رشته ی مهندسی فناوری اطلاعات</span></li>
+                        <li><strong>نظام وظیفه:</strong><span>کارت پایان خدمت</span></li>
+                        <li><strong>خصوصیات فردی:</strong><span>دقیق، نکته سنج، پرسشگر،سخت کوش، منظم، مسئولیت پذیر، علقه مند به پیشرفت و ارتفاء سطح علمی</span></li>
+                        <li><strong>سرگرمی ها:</strong><span>مطالعه، بازی های رایانه ای، موسیقی، فیلم، وبگردی</span></li>
+                    </ul>
+                    <p><strong> توسعه دهنده وب:</strong>  طراحی و توسعه رابط های کاربری، مسلط به  Html، CSS، Bootstrap و GITHUB و آشنایی متوسط با CCSS، تجربه کار با ELEMENTOR در وردپرس</p>
+                    <p><strong> طراح گرافیک:</strong> طراحی و پیاده سازی لوگو، طراحی محتوای مورد نیاز برای تبلیغات در شبکه های اجتماعی، طراحی فرمت های گرافیکی، طراحی کاتالوگ، بروشور، کارت ویزیت، اطلاعیه ... </p>
+                    <p><strong> موشن گرافیک :</strong> تجربه در طراحی تیزر محصول، لوگو موشن، انیمیشن کاراکتر، طراحی و اجرای تیزر معرفی و انیمیشن محیط بازی موبایل.</p>
                 </div>
                 <div class="row skills p-3">
                     <div class="col-6 htmlProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>html 5</p>
-                            <p>95%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar htmlBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded htmlBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 cssProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>Css3</p>
-                            <p>95%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar cssBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded cssBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 jsProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>JavaScript</p>
-                            <p>10%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar jsBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded jsBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 bootstrapProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>bootstrap 5</p>
-                            <p>75%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar bootstrapBar"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 sqlProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
-                            <p>Sql</p>
-                            <p>35%</p>
-                        </div>
-                        <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar sqlBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded bootstrapBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 wordpressProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>wordpress</p>
-                            <p>60%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar wordpressBar"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 phpProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
-                            <p>PHP</p>
-                            <p>40%</p>
-                        </div>
-                        <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar phpBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded wordpressBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 githubProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>github</p>
-                            <p>80%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar gitBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded gitBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 vscodeProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>visual studio code</p>
-                            <p>100%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar vscodeBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded vscodeBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 photoshopProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>photoshop</p>
-                            <p>70%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar psdBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded psdBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 aftereffectsProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>aftereffects</p>
-                            <p>70%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar aepBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded aepBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 adobexdProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>adobe xd</p>
-                            <p>50%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar xdBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded xdBar"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 icdlProg ProgWidth py-0 px-3 mb-3">
-                        <div class="p d-flex justify-content-between">
+                        <div class="p d-flex justify-content-start">
                             <p>icdl</p>
-                            <p>90%</p>
                         </div>
                         <div class="pp">
-                            <div class="skillDiv">
-                                <span class="skillBar icdlBar"></span>
+                            <div class="skillDiv w-100 rounded">
+                                <span class="skillBar d-block rounded icdlBar"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="tab-pane experiences fade" id="Experiences" role="tabpanel">
-                <div class="head_title">
+            <section class="tab-pane experiences fade vh-100" id="Experiences" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
                     <h2>
-                        Experience
+                        سوابق کاری
                     </h2>
                 </div>
                 <div class="container py-0 px-4 m-0">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="main-timeline position-relative">
-                                <div class="timeline w-50">
+                            <div class="main-timeline position-relative pb-2">
+                                <div class="timeline w-50 my-0 mx-2 float-end">
                                     <a href="#" class="timeline-content d-block position-relative">
                                         <span class="timeline-year position-absolute top-50">2021</span>
-                                        <h3 class="title text-center text-capitalize">,Web Developer</h3>
-                                        <h3 class="title text-center text-capitalize">Motion Graphic Designer</h3>
-                                        <p class="description text-start m-0">
-                                            <span>YOU'R COMPANY</span><br>
-                                            <small>2021</small>
+                                        <h3 class="title text-end">توسعه دهنده وب</h3>
+                                        <h3 class="title text-end">طراحی گرافیک</h3>
+                                        <h3 class="title text-end">موشن گرافیک</h3>
+                                        <p class="description text-end m-0">
+                                            <span>فریلنسر</span><br>
+                                            <small>2021-2022</small>
                                         </p>
                                     </a>
                                 </div>
-                                <div class="timeline w-50">
+                                <div class="timeline w-50 my-0 mx-2 float-start">
                                     <a href="#" class="timeline-content d-block position-relative">
                                         <span class="timeline-year position-absolute top-50">2021</span>
-                                        <h3 class="title text-center text-capitalize">,Web Developer</h3>
-                                        <h3 class="title text-center text-capitalize">Motion Graphic Designer</h3>
-                                        <p class="description text-start m-0">
-                                            <span>RPT.VIRA COMPANY</span><br>
-                                            <small>2021</small>
+                                        <h3 class="title text-end">توسعه دهنده وب</h3>
+                                        <h3 class="title text-end">موشن گرافیک</h3>
+                                        <p class="description text-end m-0">
+                                            <span>شرکت رهپویان طراح ویرا (گیمینگ)</span><br>
+                                            <small>6 ماه</small>
                                         </p>
                                     </a>
                                 </div>
-                                <div class="timeline w-50">
+                                <div class="timeline w-50 my-0 mx-2 float-end">
                                     <a href="#" class="timeline-content d-block position-relative">
                                         <span class="timeline-year position-absolute top-50">2017</span>
-                                        <h3 class="title text-center text-capitalize">Motion Graphic Designer</h3>
-                                        <p class="description text-start m-0">
-                                            <span>PFAP COMPANY</span><br>
+                                        <h3 class="title text-end">موشن گرافیک</h3>
+                                        <p class="description text-end m-0">
+                                            <span>شرکت پیشرو فن افزار پارس</span><br>
                                             <small>2017-2021</small>
                                         </p>
                                     </a>
@@ -357,445 +329,272 @@
                     </div>
                 </div>
             </section>
-            <section class="tab-pane service fade" id="Service" role="tabpanel">
-                <div class="head_title">
+            <section class="tab-pane service fade vh-100" id="Service" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
                     <h2>
-                        service
+                        خدمات
                     </h2>
                 </div>
-                <div class="container py-0 px-4">
+                <div class="container py-2 px-4">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
                                         <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
                                     </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">Web Development</h3>
-                                <p class="description">
-                                    Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). ... Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing
-                                    markup and coding.
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">توسعه دهنده وب</h3>
+                                <p class="description text-end px-3">
+                                    کاری است که در توسعه یک وب سایت برای اینترنت (وب جهانی) یا اینترانت (شبکه خصوصی) انجام می شود. ... در میان متخصصان وب، «توسعه وب» معمولاً به جنبه های اصلی غیرطراحی ساخت وب سایت اشاره دارد: نوشتن.
+                                       علامت گذاری و کدگذاری
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/>
                                       </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">brand building</h3>
-                                <p class="description">
-                                    The key to a successful brand lies in delivering value to the customer. Brands offer customers a promise, a set of values that will motivate them. Brands are positioned to echo the brand promise.This requires understanding customer needs.
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">طراحی لوگو</h3>
+                                <p class="description text-end px-3">
+                                    لوگو یا آرم به علامتی گفته می شود که می تواند تصویر یا یک نوشته و یا ترکیبی از هر دو باشد که به صورتی خاص و منحصر بفرد طراحی شده و به نوعی نشانگر یک کسب و کار، سازمان، فرد و غیره است و باعث می شود تا به آن هویت بخشیده شود.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-word-fill" viewBox="0 0 16 16">
                                         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5.485 4.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 7.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
                                       </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">wordpress</h3>
-                                <p class="description">
-                                    WordPress is, first and foremost, a blogging platform. While you can use it for straightforward WordPress websites, even those without a blog, it's designed to be a blog content management system (CMS), and so it has a ton of features for that specific
-                                    use case.
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">وردپرس</h3>
+                                <p class="description text-end px-3">
+                                    وردپرس قبل از هر چیز یک پلت فرم وبلاگ نویسی است. در حالی که می‌توانید از آن برای وب‌سایت‌های وردپرس ساده، حتی آن‌هایی که وبلاگ ندارند، استفاده کنید، به‌عنوان یک سیستم مدیریت محتوای وبلاگ (CMS) طراحی شده است، و بنابراین دارای تعداد زیادی ویژگی برای آن مورد خاص است.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                                         <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
                                       </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">Infographic chart</h3>
-                                <p class="description">
-
-                                    Let's start with a general definition. According to dictionary, an infographic is, “a visual presentation of information in the form of a chart, graph, or other image accompanied by minimal text, intended to give an easily understood overview, often of
-                                    a complex subject.”
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">نمودار اینفوگرافیک</h3>
+                                <p class="description text-end px-3">
+                                    بر اساس فرهنگ لغت، اینفوگرافیک عبارت است از «ارائه بصری اطلاعات در قالب یک نمودار، نمودار یا تصویر دیگر همراه با حداقل متن، با هدف ارائه یک نمای کلی به راحتی قابل درک، اغلب از یک موضوع پیچیده».
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
                                         <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
                                       </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">logo motion</h3>
-                                <p class="description">
-                                    Why logo is a motion? To bring a uniqueness to a logo, designers can add some motion. An animated logo allows the imagination go out of control. Original graphics combined with different visual effects create a unique way to perceive the logo.
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">لوگو موشن</h3>
+                                <p class="description text-end px-3">
+                                    برای اینکه یک لوگو منحصر به فرد باشد، طراحان می توانند کمی حرکت به آن اضافه کنند. یک لوگوی متحرک اجازه می دهد تا تخیل از کنترل خارج شود. گرافیک اصلی همراه با جلوه های بصری مختلف روشی منحصر به فرد برای درک لوگو ایجاد می کند.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <div class="serviceBox text-center position-relative">
-                                <div class="service-icon position-relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="serviceBox text-center position-relative mb-5 pt-0 px-1 pb-5">
+                                <div class="service-icon position-relative px-0 pt-0 pb-1 mt-0 mx-auto mb-3">
                                     <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
                                         <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
                                       </svg>
                                 </span>
                                 </div>
-                                <h3 class="title">Promotional teaser</h3>
-                                <p class="description">
-
-                                    A teaser campaign, also known as a pre-launch campaign, is an advertising campaign which typically consists of a series of small, cryptic, challenging advertisements that anticipate a larger, full-blown campaign for a product launch or otherwise important
-                                    event; these advertisements are called "teasers" or "teaser ads" ...
+                                <h3 class="title mx-0 mt-0 mb-2 pe-3 text-end">تیزر تبلیغاتی</h3>
+                                <p class="description text-end px-3">
+                                    کمپین تبلیغاتی که به عنوان کمپین پیش از راه اندازی نیز شناخته می شود، کمپینی است که معمولاً از یک سری تبلیغات کوچک، رمزآلود و چالش برانگیز تشکیل می شود که یک کمپین بزرگتر و کامل را برای معرفی محصول یا رویدادهای مهم دیگر پیش بینی می کند. به این تبلیغات «تیزر» یا «تیزری تبلیغاتی» می گویند...
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="tab-pane portfolio fade" id="Portfolio" role="tabpanel">
-                <div class="head_title">
+            <section class="tab-pane portfolio fade vh-100" id="Portfolio" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
                     <h2>
-                        Portfolio
+                        نمونه کارها
                     </h2>
                 </div>
                 <div id="myBtnContainer" class="tab_btn d-flex justify-content-evenly">
-                    <button class="btn border-1 outline-0 p-2 active show" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Designs')"> Designs(PSD)</button>
-                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Teasers')"> Teasers</button>
-                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('LogoMotions')"> Logo Motions</button>
-                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Animations')"> Animations</button>
-                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Web')"> Web </button>
+                    <button class="btn border-1 outline-0 p-2 active show" onclick="filterSelection('all')"> همه</button>
+                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Designs')"> طراحی گرافیک</button>
+                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Teasers')"> تیزر</button>
+                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('LogoMotions')"> لوگو موشن</button>
+                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Animations')"> انیمیشن</button>
+                    <button class="btn border-1 outline-0 p-2" onclick="filterSelection('Web')"> وب </button>
                 </div>
                 <div class="container overflow-hidden">
                     <div class="row">
-                        <div class="col-md-4 photoDiv Designs Web">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L01.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Designs">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L02.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Designs">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L03.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Teasers Web">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L04.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Teasers">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L05.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Teasers">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Designs">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/logo/L06.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions Web">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Teasers Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions Web">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Teasers">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions Web">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Teasers">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions Web">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv LogoMotions">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Animations Web">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Animations">
-                            <div class="box">
-                                <img src="images/neonica.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-4 photoDiv Animations">
-                            <div class="box">
-                                <img src="images/vira.jpg">
-                                <div class="box-content">
-                                    <h3 class="title">Williamson</h3>
-                                    <span class="post">Web Developer</span>
-                                    <ul class="icon">
-                                        <li>
-                                            <a href="#" class="fa fa-search"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fa fa-link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="col-md-4 col-sm-6 photoDiv LogoMotions">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Animations Web">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/Catalog template.jpg">
+                                <div class="box-content w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Animations">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 photoDiv Animations">
+                            <div class="box text-center position-relative">
+                                <img class="w-100" src="images/other/game icon- Neon Collector.jpg">
+                                <div class="box-content w-100 h-100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="tab-pane certificate fade" id="Certificate" role="tabpanel">
-                <div class="head_title">
+            <section class="tab-pane certificate fade vh-100" id="Certificate" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
                     <h2>
-                        certificate
+                        گواهی نامه ها
                     </h2>
                 </div>
-                <div class="swiper mySwiper2">
+                <div class="swiper mySwiper2 position-relative top-0">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/html5.jpg">
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <img class="w-100 h-100" src="images/html5.jpg">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/css3.jpg">
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <img class="w-100 h-100" src="images/css3.jpg">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/endnote.png">
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <img class="w-100 h-100" src="images/endnote.png">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/c.png">
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <img class="w-100 h-100" src="images/c.png">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/responsive.jpg">
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                            <img class="w-100 h-100" src="images/responsive.jpg">
                         </div>
 
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/html5.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/css3.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/endnote.png">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/c.png">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/responsive.jpg">
-                        </div>
-                    </div>
-                </div>
-
-
             </section>
-            <section class="tab-pane contact fade" id="Contact" role="tabpanel">
-                <div class="head_title">
+            <section class="tab-pane contact fade vh-100" id="Contact" role="tabpanel">
+                <div class="head_title py-2 px-4 text-end">
                     <h2>
-                        Contact
+                        ارتباط با من
                     </h2>
                 </div>
                 <div class="row contact_info">
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <div class="text-center d-flex flex-column align-items-center justify-content-center">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span>
@@ -805,11 +604,11 @@
                                 </span>
                             </div>
                             <div class="text">
-                                <p>Hamedan-Malayer</p>
+                                <p>ایران- تهران</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <div class="text-center  d-flex flex-column align-items-center justify-content-center">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span>
@@ -823,7 +622,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <div class="text-center  d-flex flex-column align-items-center justify-content-center">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span>
@@ -838,39 +637,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="row contact_form">
+                <div class="row contact_form d-flex justify-content-center py-0 px-3">
                     <div class="col-lg-12">
-                        <form class="contact2-form validate-form">
+                        <form class="contact2-form validate-form w-100 mb-3">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="wrap-input2 validate-input" data-validate="Name is required">
-                                        <input class="input2" type="text" name="name">
-                                        <span class="focus-input2" data-placeholder="NAME"></span>
+                                <div class="col-md-4">
+                                    <div class="wrap-input2 mb-4 w-100 position-relative validate-input" data-validate="Name is required">
+                                        <input class="input2 d-block w-100 border-0 outline-0" type="text" name="name">
+                                        <span class="focus-input2 position-absolute d-block w-100 h-100 top-0 end-0 "data-placeholder="NAME"></span>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="wrap-input2 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                                        <input class="input2" type="text" name="email">
-                                        <span class="focus-input2" data-placeholder="EMAIL"></span>
+                                <div class="col-md-4">
+                                    <div class="wrap-input2 mb-4 w-100 position-relative validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                                        <input class="input2 d-block w-100 border-0 outline-0" type="text" name="email">
+                                        <span class="focus-input2 position-absolute d-block w-100 h-100 top-0 end-0 "data-placeholder="EMAIL"></span>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="wrap-input2 validate-input" data-validate="">
-                                        <input class="input2" type="text" name="subject">
-                                        <span class="focus-input2" data-placeholder="SUBJECT"></span>
+                                <div class="col-md-4">
+                                    <div class="wrap-input2 mb-4 w-100 position-relative validate-input" data-validate="">
+                                        <input class="input2 d-block w-100 border-0 outline-0" type="text" name="subject">
+                                        <span class="focus-input2 position-absolute d-block w-100 h-100 top-0 end-0 "data-placeholder="SUBJECT"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="wrap-input2 validate-input" data-validate="Message is required">
-                                <textarea class="input2" name="message"></textarea>
-                                <span class="focus-input2" data-placeholder="MESSAGE"></span>
+                                <textarea class="input2 d-block w-100 border-0 outline-0" name="message"></textarea>
+                                <span class="focus-input2 position-absolute d-block w-100 h-100 top-0 end-0 "data-placeholder="MESSAGE"></span>
                             </div>
-                            <div class="container-contact2-form-btn">
+                            <div class="container-contact2-form-btn d-flex flex-wrap justify-content-center pt-2">
                                 <div class="wrap-contact2-form-btn">
-                                    <div class="contact2-form-bgbtn"></div>
-                                    <button class="contact2-form-btn">
-                                Send To Email
-                            </button>
+                                    <div class="contact2-form-bgbtn position-absolute h-100 top-0 "></div>
+                                    <button class="contact2-form-btn d-flex justify-content-center align-items-center py-0 px-3 border-0">
+                                        ارسال ایمیل
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -882,31 +681,21 @@
         <!-- end content -->
     </div>
 
-
-
     <script src="js/jqyry.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->    
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper2", {
             loop: true,
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 1,
             freeMode: true,
             watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
-            spaceBetween: 10,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
             },
         });
     </script>
@@ -973,7 +762,6 @@
     <script>
         filterSelection("all")
         portfolio
-
         function filterSelection(c) {
             var x, i;
             x = document.getElementsByClassName("photoDiv");
@@ -983,7 +771,6 @@
                 if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
             }
         }
-
         function w3AddClass(element, name) {
             var i, arr1, arr2;
             arr1 = element.className.split(" ");
@@ -994,7 +781,6 @@
                 }
             }
         }
-
         function w3RemoveClass(element, name) {
             var i, arr1, arr2;
             arr1 = element.className.split(" ");
@@ -1018,6 +804,13 @@
         }
     </script>
 
+    <script>
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('hamburger_toggle')) {
+                e.target.children[0].classList.toggle('active');
+            }
+        }) 
+    </script>
 </body>
 
 </html>

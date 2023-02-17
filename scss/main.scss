@@ -501,8 +501,8 @@ $light:#e1e1e1;
 .header {
     @include content_cast;
     .content-inner {
-        top: 30%;
-        height: 200px;
+        // top: 30%;
+        height: 150px;
         p {
             color: $secondary;
             font-size: 22px;
